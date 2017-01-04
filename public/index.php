@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-session_name('StudentHealth');
+session_name('HealthAdmin');
 /**
  * Creating the Boostrapping Application
  * All Boostrapping Activities Starts here

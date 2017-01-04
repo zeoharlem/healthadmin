@@ -19,8 +19,8 @@ class LoginController extends BaseController{
     //put your code here
     public function indexAction(){
         if($this->request->isPost()){
-            $register   = Register::findFirstByEmail(
-                    $this->request->getPost('email'));
+            $register   = \Multiple\Frontend\Models\
+                    Admin::findFirstByEmail($this->request->getPost('email'));
             if($register != false){
                 if($this->security->checkHash(
                         $this->request->getPost('password'), $register->password)){
@@ -50,7 +50,7 @@ class LoginController extends BaseController{
         $this->response->redirect('checkout/process?token=' . uniqid());
     }
     
-    private function __registerSession(Register $register){
+    private function __registerSession(\Multiple\Frontend\Models\Admin $register){
         $this->session->set('auth', array(
             'role'          => $register->role,
             'email'         => $register->email,

@@ -21,7 +21,7 @@ class BaseController extends Controller{
         \Phalcon\Tag::prependTitle('Health System');
         \Phalcon\Tag::setTitleSeparator(' | ');
         $this->assets->collection('headers')
-                ->addCss('assets/admin/css/libs/font-awesome/css/font-awesome.min.css')
+                ->addCss('assets/admin/css/lib/font-awesome/font-awesome.min.css')
                 ->addCss('assets/admin/css/lib/bootstrap/bootstrap.min.css')
                 ->addCss('assets/admin/css/main.css');
         
