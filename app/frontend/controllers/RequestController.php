@@ -21,6 +21,10 @@ class RequestController extends BaseController{
         return;
     }
     
+    /**
+     * Get the List of Registered Student
+     * @return type
+     */
     public function getRegisterAction(){
         $config = array(
             "host"  => $this->config->host,
@@ -40,7 +44,7 @@ class RequestController extends BaseController{
                 }),
                 array('db' => 'department', 'dt' => 1, 
                     'formatter' => function($d, $row){
-                        $track = \Multiple\Frontend\Models\Job::find(
+                        $track = \Multiple\Frontend\Models\Department::find(
                                 'trans_id="'.$d.'"')->getLast();
                     return $track ? $track->tracking_link : '';
                 }),
