@@ -51,6 +51,7 @@ class BaseController extends Controller{
                 ->addJs('assets/admin/js/lib/tether/tether.min.js')
                 ->addJs('assets/admin/js/lib/bootstrap/bootstrap.min.js')
                 ->addJs('assets/admin/js/plugins.js')
+                //->addJs('assets/admin/js/customs.js')
                 ->addJs('assets/admin/js/app.js');
     }
     

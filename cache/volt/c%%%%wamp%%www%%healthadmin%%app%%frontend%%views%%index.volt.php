@@ -84,6 +84,7 @@
         
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4" id="login_form">
+                <?= $this->flash->output() ?>
                 <form class="form-signin" role="form" method="post" action="<?= $this->url->get('login/') ?>" id="login_form_child">
                 <h2 class="form-signin-heading">LOGIN</h2>
                 <div class="form-group">

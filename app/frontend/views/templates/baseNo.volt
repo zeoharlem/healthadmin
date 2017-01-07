@@ -12,21 +12,20 @@
         <meta name="keywords" content="Students Health">
         <meta name="robots" content="all">
 
-        <?= $this->tag->gettitle() ?>
+        {{getTitle()}}
 
-        <?= $this->assets->outputCss('headers') ?>
+        {{ this.assets.outputCss('headers') }}
             
+        {% block head %} {% endblock %}
         
 
-        
-
-<body class="with-side-menu wet-aspalt-theme">
+<body class="wet-aspalt-theme">
     <header class="site-header">
 	    <div class="container-fluid">
 	
 	        <a href="#" class="site-logo">
-	            <img class="hidden-md-down" src="<?= $this->url->get('img/logo-2.png') ?>" alt="">
-	            <img class="hidden-lg-up" src="<?= $this->url->get('img/logo-2-mob.png') ?>" alt="">
+	            <img class="hidden-md-down" src="{{url('img/logo-2.png')}}" alt="">
+	            <img class="hidden-lg-up" src="{{url('img/logo-2-mob.png')}}" alt="">
 	        </a>
 	
 	        <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
@@ -236,27 +235,22 @@
 	</header><!--.site-header-->
 
 	<div class="mobile-menu-left-overlay"></div>
-	<?= $this->partial('partials/menu') ?>
+	
     	
     <!-- Start right content -->
         <div class="page-content">
 		<div class="container-fluid">
 			<!-- ============================================================== -->
-                        
-
-<?= $this->getContent() ?>
-
+                        {% block content %}{% endblock %}
             <footer>
                 CreativeMeshKernel &copy; 2016
-                <div class="footer-links pull-right">
-                	<a href="#">About</a><a href="#">Support</a><a href="#">Terms of Service</a><a href="#">Legal</a><a href="#">Help</a><a href="#">Contact Us</a>
-                </div>
+                
             </footer>
             <!-- Footer End -->			
             </div><!--.container-fluid-->
 	</div><!--.page-content-->
 
-<?= $this->assets->outputJs('footers') ?>
+{{ this.assets.outputJs('footers') }}
 
 </body>
 </html>

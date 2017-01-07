@@ -4,12 +4,24 @@
  * and open the template in the editor.
  */
 
-
-$(document).ready(function(){
-    $('#example').DataTable({select: {
-            style: 'multi'
-        }
+(function(){
+    'use strict';
+    $(document).ready(function(){
+        var example = $('#example').DataTable({select: {
+                style: 'multi',
+            },
+            "processing": true,
+            "serverSide": true,
+            "ajax": "http://localhost/healthadmin/request/getRegister",
+            "columnDefs": [
+                {
+                    "targets": -1,
+                    "data": null,
+                    "render": function(data, type, full, meta){
+                        return '<a href="../users/'+data[5]+'?task_id='+data[6]+'" class="btn btn-sm btn-primary">view</a>';
+                    }
+                }
+            ]
+        });
     });
-    
-    
-});
+})();

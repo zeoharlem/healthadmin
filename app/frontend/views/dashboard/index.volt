@@ -21,8 +21,9 @@
 					<table id="example" class="display table" cellspacing="0" width="100%">
 						<thead>
 						<tr>
-							<th>Name</th>
-							<th>Department</th>
+							<th>First Name</th>
+							<th>Surname</th>
+							
 							<th>Phone</th>
 							<th>Email</th>
 							<th>Register Date</th>

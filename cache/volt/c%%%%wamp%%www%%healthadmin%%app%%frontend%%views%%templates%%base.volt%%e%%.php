@@ -241,12 +241,10 @@ a:5:{i:0;s:559:"
         <div class="page-content">
 		<div class="container-fluid">
 			<!-- ============================================================== -->
-                        ";s:7:"content";N;i:2;s:493:"
+                        ";s:7:"content";N;i:2;s:272:"
             <footer>
                 CreativeMeshKernel &copy; 2016
-                <div class="footer-links pull-right">
-                	<a href="#">About</a><a href="#">Support</a><a href="#">Terms of Service</a><a href="#">Legal</a><a href="#">Help</a><a href="#">Contact Us</a>
-                </div>
+                
             </footer>
             <!-- Footer End -->			
             </div><!--.container-fluid-->

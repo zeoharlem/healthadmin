@@ -14,9 +14,9 @@
 
         {{getTitle()}}
 
+        {% block head %} {% endblock %}
         {{ this.assets.outputCss('headers') }}
             
-        {% block head %} {% endblock %}
         
 
 <body class="with-side-menu wet-aspalt-theme">
@@ -244,9 +244,7 @@
                         {% block content %}{% endblock %}
             <footer>
                 CreativeMeshKernel &copy; 2016
-                <div class="footer-links pull-right">
-                	<a href="#">About</a><a href="#">Support</a><a href="#">Terms of Service</a><a href="#">Legal</a><a href="#">Help</a><a href="#">Contact Us</a>
-                </div>
+                
             </footer>
             <!-- Footer End -->			
             </div><!--.container-fluid-->
