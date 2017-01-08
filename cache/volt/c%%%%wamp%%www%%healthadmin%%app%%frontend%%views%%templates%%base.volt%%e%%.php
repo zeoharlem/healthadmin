@@ -1,4 +1,4 @@
-a:5:{i:0;s:559:"
+a:5:{i:0;s:495:"
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,9 +14,9 @@ a:5:{i:0;s:559:"
 
         <?= $this->tag->gettitle() ?>
 
+        ";s:4:"head";a:1:{i:0;a:4:{s:4:"type";i:357;s:5:"value";s:1:" ";s:4:"file";s:62:"C:\wamp\www\healthadmin\app/frontend/views/templates/base.volt";s:4:"line";i:17;}}i:1;s:14352:"
         <?= $this->assets->outputCss('headers') ?>
             
-        ";s:4:"head";a:1:{i:0;a:4:{s:4:"type";i:357;s:5:"value";s:1:" ";s:4:"file";s:62:"C:\wamp\www\healthadmin\app/frontend/views/templates/base.volt";s:4:"line";i:19;}}i:1;s:14288:"
         
 
 <body class="with-side-menu wet-aspalt-theme">

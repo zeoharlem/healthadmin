@@ -7,11 +7,11 @@
 	        </ul>
 	    </section>
 	    <ul class="side-menu-list">
-	        <li class="purple with-sub">
-	            <span>
+	        <li class="purple">
+	            <a href="{{url('dashboard/?token='~this.component.helper.makeRandomInts())}}">
 	                <i class="font-icon font-icon-speed"></i>
 	                <span class="lbl">Dashboard</span>
-	            </span>
+	            </a>
 	        </li>
 	        
 	        <li class="grey with-sub">

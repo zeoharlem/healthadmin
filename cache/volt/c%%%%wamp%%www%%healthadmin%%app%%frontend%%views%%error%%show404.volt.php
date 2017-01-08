@@ -14,10 +14,10 @@
 
         <?= $this->tag->gettitle() ?>
 
-        <?= $this->assets->outputCss('headers') ?>
-            
         
 
+        <?= $this->assets->outputCss('headers') ?>
+            
         
 
 <body class="with-side-menu wet-aspalt-theme">

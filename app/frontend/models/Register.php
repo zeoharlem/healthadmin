@@ -17,6 +17,31 @@ use Phalcon\Validation\Validator;
 
 class Register extends BaseModel{
     //put your code here
+    public function initialize(){
+        $this->belongsTo(
+                'register_id',
+                "Multiple\\Frontend\\Models\\Studentone",
+                'register_id',
+                array('reusable' => true));
+        
+        $this->belongsTo(
+                'register_id',
+                "Multiple\\Frontend\\Models\\Imagecaption",
+                'register_id',
+                array('reusable' => true));
+        
+        $this->skipAttributesOnUpdate(array('jamb_reg_no','password'));
+    }
+    
+    
+    public function getStudentone(){
+        return $this->getRelated('Multiple\Frontend\Models\Studentone');
+    }
+    
+    public function getImagecaption(){
+        return $this->getRelated('Multiple\Frontend\Models\Imagecaption');
+    }
+    
     public function beforeValidationOnCreate(){
         $this->role     = "user";
         $this->date_of_registration = new \Phalcon\Db\RawValue('NOW()');
