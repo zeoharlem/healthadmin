@@ -58,7 +58,8 @@ class UsersController extends BaseController{
                                         \Register::find('register_id="'.
                         $this->request->getQuery('task_id').'"')->getFirst();
         if($this->request->isPost()){
-            
+            $stackflow  = $this->request->getPost();
+            var_dump($stackflow); exit;
             $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_NO_RENDER);
             return;
         }

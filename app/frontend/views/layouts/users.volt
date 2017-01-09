@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
 					<section class="widget widget-tabs-compact">
 						<div class="tab-content widget-tabs-content">
 							<div class="tab-pane active" id="w-3-tab-1" role="tabpanel">
